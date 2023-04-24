@@ -14,6 +14,15 @@
 		66FD3EA029F6EF2F0083036D /* PaleoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3E9F29F6EF2F0083036D /* PaleoTests.swift */; };
 		66FD3EAA29F6EF2F0083036D /* PaleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EA929F6EF2F0083036D /* PaleoUITests.swift */; };
 		66FD3EAC29F6EF2F0083036D /* PaleoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EAB29F6EF2F0083036D /* PaleoUITestsLaunchTests.swift */; };
+		66FD3EB929F6EF4C0083036D /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EB829F6EF4C0083036D /* RecipeViewModel.swift */; };
+		66FD3EBB29F6F1050083036D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EBA29F6F1050083036D /* RecipeView.swift */; };
+		66FD3EBD29F6F1BF0083036D /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EBC29F6F1BF0083036D /* RecipeListViewController.swift */; };
+		66FD3EBF29F6F1F80083036D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD3EBE29F6F1F80083036D /* ProfileViewController.swift */; };
+		66FD3EC229F6F33F0083036D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 66FD3EC129F6F33F0083036D /* FirebaseAnalytics */; };
+		66FD3EC429F6F33F0083036D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66FD3EC329F6F33F0083036D /* FirebaseAnalyticsSwift */; };
+		66FD3EC629F6F33F0083036D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 66FD3EC529F6F33F0083036D /* FirebaseAuth */; };
+		66FD3EC829F6F33F0083036D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 66FD3EC729F6F33F0083036D /* FirebaseFirestore */; };
+		66FD3ECA29F6F33F0083036D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 66FD3EC929F6F33F0083036D /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,10 @@
 		66FD3EA529F6EF2F0083036D /* PaleoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaleoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FD3EA929F6EF2F0083036D /* PaleoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoUITests.swift; sourceTree = "<group>"; };
 		66FD3EAB29F6EF2F0083036D /* PaleoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66FD3EB829F6EF4C0083036D /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		66FD3EBA29F6F1050083036D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		66FD3EBC29F6F1BF0083036D /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		66FD3EBE29F6F1F80083036D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FD3EC429F6F33F0083036D /* FirebaseAnalyticsSwift in Frameworks */,
+				66FD3EC829F6F33F0083036D /* FirebaseFirestore in Frameworks */,
+				66FD3EC629F6F33F0083036D /* FirebaseAuth in Frameworks */,
+				66FD3ECA29F6F33F0083036D /* FirebaseStorage in Frameworks */,
+				66FD3EC229F6F33F0083036D /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +114,10 @@
 			children = (
 				66FD3E8E29F6EF2E0083036D /* PaleoApp.swift */,
 				66FD3E9029F6EF2E0083036D /* ContentView.swift */,
+				66FD3EB829F6EF4C0083036D /* RecipeViewModel.swift */,
+				66FD3EBA29F6F1050083036D /* RecipeView.swift */,
+				66FD3EBC29F6F1BF0083036D /* RecipeListViewController.swift */,
+				66FD3EBE29F6F1F80083036D /* ProfileViewController.swift */,
 				66FD3E9229F6EF2F0083036D /* Assets.xcassets */,
 				66FD3E9429F6EF2F0083036D /* Preview Content */,
 			);
@@ -143,6 +165,13 @@
 			dependencies = (
 			);
 			name = Paleo;
+			packageProductDependencies = (
+				66FD3EC129F6F33F0083036D /* FirebaseAnalytics */,
+				66FD3EC329F6F33F0083036D /* FirebaseAnalyticsSwift */,
+				66FD3EC529F6F33F0083036D /* FirebaseAuth */,
+				66FD3EC729F6F33F0083036D /* FirebaseFirestore */,
+				66FD3EC929F6F33F0083036D /* FirebaseStorage */,
+			);
 			productName = Paleo;
 			productReference = 66FD3E8B29F6EF2E0083036D /* Paleo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 66FD3E8229F6EF2E0083036D;
+			packageReferences = (
+				66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 66FD3E8C29F6EF2E0083036D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FD3EBF29F6F1F80083036D /* ProfileViewController.swift in Sources */,
+				66FD3EBD29F6F1BF0083036D /* RecipeListViewController.swift in Sources */,
 				66FD3E9129F6EF2E0083036D /* ContentView.swift in Sources */,
+				66FD3EB929F6EF4C0083036D /* RecipeViewModel.swift in Sources */,
+				66FD3EBB29F6F1050083036D /* RecipeView.swift in Sources */,
 				66FD3E8F29F6EF2E0083036D /* PaleoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +619,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66FD3EC129F6F33F0083036D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		66FD3EC329F6F33F0083036D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		66FD3EC529F6F33F0083036D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		66FD3EC729F6F33F0083036D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		66FD3EC929F6F33F0083036D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66FD3EC029F6F33F0083036D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66FD3E8329F6EF2E0083036D /* Project object */;
 }
